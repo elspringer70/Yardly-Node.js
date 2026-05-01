@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yardly - Rent Backyards for Dogs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="#FFD700"/>
+                        <path d="M16 8C12.6863 8 10 10.6863 10 14V20H22V14C22 10.6863 19.3137 8 16 8Z" fill="#4A90E2"/>
+                        <path d="M10 20V24C10 25.1046 10.8954 26 12 26H20C21.1046 26 22 25.1046 22 24V20H10Z" fill="#4A90E2"/>
+                        <circle cx="14" cy="12" r="1.5" fill="white"/>
+                        <circle cx="18" cy="12" r="1.5" fill="white"/>
+                        <path d="M14 16C14 16 15 17 16 17C17 17 18 16 18 16" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">Yardly</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#host">Become a Host</a>
+                <a href="host.html">List Your Yard</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Log in</button>
+                <button class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Let your dog run wild in a backyard near you</h1>
+                <p class="hero-subtitle">Find safe, fenced backyards for your dog to play while you're away. Hosts earn money sharing their space.</p>
+                <div class="hero-search">
+                    <div class="search-input">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 15.5C11.5376 15.5 14 13.0376 14 10C14 6.96243 11.5376 4.5 8.5 4.5C5.46243 4.5 3 6.96243 3 10C3 13.0376 5.46243 15.5 8.5 15.5Z" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.5 13.5L17 17" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="text" placeholder="Where are you going?">
+                    </div>
+                    <div class="search-date">
+                        <input type="date">
+                    </div>
+                    <button class="btn btn-search">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Backyards -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Backyards</h2>
+                <a href="#" class="view-all">View all</a>
+            </div>
+            <div id="listings-grid" class="listings-grid">
+                <!-- Listings will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How Yardly Works</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" stroke="#4A90E2" stroke-width="2"/>
+                            <path d="M24 14V24L32 32" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Search</h3>
+                    <p>Find safe, fenced backyards near you by entering your location and dates.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" stroke="#4A90E2" stroke-width="2"/>
+                            <path d="M16 24L20 28L32 16" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Book</h3>
+                    <p>Book the perfect backyard for your dog with just a few clicks. Secure payment included.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" stroke="#4A90E2" stroke-width="2"/>
+                            <path d="M16 24L20 28L32 16" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Enjoy</h3>
+                    <p>Your dog gets to run and play in a safe, private backyard while you're away.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Host -->
+    <section id="host" class="why-host">
+        <div class="container">
+            <div class="why-host-content">
+                <div class="why-host-text">
+                    <h2>Turn Your Backyard Into Income</h2>
+                    <p>Hosts earn money by sharing their fenced backyard with dogs who need a safe place to play. It's easy to get started and you keep 90% of each booking.</p>
+                    <ul class="host-benefits">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Earn money per hour</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Meet friendly dogs</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Flexible scheduling</span>
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Free insurance coverage</span>
+                        </li>
+                    </ul>
+                    <a href="host.html" class="btn btn-primary btn-large">List Your Yard</a>
+                </div>
+                <div class="why-host-image">
+                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600&h=500&fit=crop" alt="Dog in backyard">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="#FFD700"/>
+                            <path d="M16 8C12.6863 8 10 10.6863 10 14V20H22V14C22 10.6863 19.3137 8 16 8Z" fill="#4A90E2"/>
+                            <path d="M10 20V24C10 25.1046 10.8954 26 12 26H20C21.1046 26 22 25.1046 22 24V20H10Z" fill="#4A90E2"/>
+                            <circle cx="14" cy="12" r="1.5" fill="white"/>
+                            <circle cx="18" cy="12" r="1.5" fill="white"/>
+                            <path d="M14 16C14 16 15 17 16 17C17 17 18 16 18 16" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-text">Yardly</span>
+                    </div>
+                    <p>让您的狗在附近的后院自由奔跑</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Cancellation Options</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yardly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
